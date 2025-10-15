@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Code Review Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.545.0",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1",
+    "html2canvas": "https://aistudiocdn.com/html2canvas@^1.4.1"
+  }
+}
+</script>
+<style>
+  @keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+    50% { transform: translateY(-25px) rotate(10deg); opacity: 0.8; }
+    100% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animated-gradient-text {
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 5s ease infinite;
+  }
+
+  @keyframes button-glow {
+    0%, 100% { box-shadow: 0 0 5px #06b6d4, 0 0 10px #06b6d4, 0 0 15px #06b6d4; }
+    50% { box-shadow: 0 0 10px #0891b2, 0 0 20px #0891b2, 0 0 30px #0891b2; }
+  }
+
+  .button-glow-animate {
+    animation: button-glow 4s ease-in-out infinite;
+  }
+
+  /* Styles for the professional PDF report */
+  .printable-report {
+    background-color: white !important;
+    color: black !important;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+  }
+  .printable-report h1, .printable-report h2, .printable-report h3 {
+    color: black !important;
+    border-color: #dddddd !important;
+    font-weight: bold;
+  }
+  .printable-report h1 { font-size: 24pt; }
+  .printable-report h2 { font-size: 18pt; }
+  .printable-report h3 { font-size: 14pt; }
+  .printable-report p, .printable-report li {
+    color: #333333 !important;
+  }
+  .printable-report pre {
+    background-color: #f5f5f5 !important;
+    border: 1px solid #dddddd !important;
+    color: black !important;
+    padding: 16px !important;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .printable-report code {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .printable-report hr {
+      border-color: #cccccc !important;
+  }
+  .printable-report .copy-button {
+    display: none !important;
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900 text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

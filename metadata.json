@@ -1,0 +1,5 @@
+{
+  "name": "Code Review Assistant",
+  "description": "An AI-powered assistant to automate code reviews. Upload your source code files and receive a detailed analysis of structure, readability, best practices, and potential bugs with improvement suggestions.",
+  "requestFramePermissions": []
+}
