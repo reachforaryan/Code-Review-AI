@@ -6,7 +6,8 @@ An AI-powered tool to automatically review your code, provide feedback, and sugg
 
 [Watch a demo of the Code Review Assistant](https://drive.google.com/file/d/1dS26otR_XSqC40NPV9OriAmniAXhiG7V/view?usp=sharing)
 
-## [Deployed Project](https://code-review-ai-pearl.vercel.app) 
+## Deployed Project
+* [Link for deployed Project](https://code-review-ai-pearl.vercel.app) 
 * This project is deployed with [Vercel](https://vercel.com)
 
 ## Features
