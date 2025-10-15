@@ -4,7 +4,10 @@ An AI-powered tool to automatically review your code, provide feedback, and sugg
 
 ## Demo Video
 
-[Watch a demo of the Code Review Assistant]()
+[Watch a demo of the Code Review Assistant](https://drive.google.com/file/d/1dS26otR_XSqC40NPV9OriAmniAXhiG7V/view?usp=sharing)
+
+## [Deployed Project](https://code-review-ai-pearl.vercel.app) 
+* This project is deployed with [Vercel](https://vercel.com)
 
 ## Features
 
@@ -26,8 +29,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/code-review-assistant.git
-    cd code-review-assistant
+    git clone https://github.com/reachforaryan/Code-Review-AI.git
+    cd Code-Review-AI
     ```
 
 2.  **Install dependencies:**
@@ -49,15 +52,7 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```
     The application will be available at `http://localhost:3000`.
 
-## Deployment
-
-This application can be easily deployed to any static site hosting service. Here are a few recommendations:
-
-*   **Vercel**
-*   **Netlify**
-*   **GitHub Pages**
-
-For a detailed guide on how to deploy, please refer to the documentation of your chosen hosting provider. Remember to set the `GEMINI_API_KEY` environment variable in your hosting provider's settings.
+This application is deployed on Vercel at `https://code-review-ai-pearl.vercel.app`.
 
 ## Technology Stack
 
